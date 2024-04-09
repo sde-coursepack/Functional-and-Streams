@@ -1,5 +1,9 @@
 package mcburney.edu.functional.before;
 
+import mcburney.edu.functional.Level;
+import mcburney.edu.functional.Student;
+import mcburney.edu.functional.TestStudentList;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
