@@ -3,18 +3,20 @@ package mcburney.edu.functional.before;
 import mcburney.edu.functional.Level;
 import mcburney.edu.functional.Student;
 import mcburney.edu.functional.TestStudentList;
+import mcburney.edu.functional.sorting.StudentGPAComparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class NoStreamDemo {
     public static void main(String[] args) {
-        List<Student> slist = TestStudentList.getTestStudentList();
+        List<Student> studentList = TestStudentList.getTestStudentList();
 
         //get undergrads
         List<Student> undergrads = new ArrayList<>();
-        for (Student s: slist) {
+        for (Student s: studentList) {
             if (s.getLevel().equals(Level.UG)) {
                 undergrads.add(s);
             }

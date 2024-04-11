@@ -7,3 +7,4 @@ public class StringIgnoreCaseComparator implements Comparator<String> {
 		return o1.toUpperCase().compareTo(o2.toUpperCase());
 	}
 }
+
