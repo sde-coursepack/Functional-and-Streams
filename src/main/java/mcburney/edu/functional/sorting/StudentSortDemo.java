@@ -10,14 +10,16 @@ import java.util.List;
 public class StudentSortDemo {
     public static void main(String[] args) {
 
-        List<Student> slist = TestStudentList.getTestStudentList();
+        List<Student> studentList = TestStudentList.getTestStudentList();
 
         //adding additional students for testing sorting on multiple criteria
-        slist.add(new Student("Greta", "Green", 3.2, Level.UG));
-        slist.add(new Student("Zelda", "Aaronson", 3.51, Level.UG));
+        studentList.add(new Student("Greta", "Green", 3.2, Level.UNDERGRAD));
+        studentList.add(new Student("Zelda", "Aaronson", 3.51, Level.UNDERGRAD));
 
-        Collections.sort(slist);
+        Collections.sort(studentList);
 
-        System.out.println(slist);
+        for (Student student: studentList) {
+            System.out.println(student);
+        }
     }
 }

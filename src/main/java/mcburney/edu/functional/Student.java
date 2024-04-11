@@ -36,7 +36,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public String toString() {
-        return "mcburney.edu.functional.Student{" +
+        return "Student{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", gpa=" + gpa +
@@ -44,6 +44,7 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
+    // By default, students are sorted by last name, then by first name, then by GPA
     private static final Comparator<Student> DEFAULT_COMPARATOR =
             Comparator.comparing(Student::getLastName)
                     .thenComparing(Student::getFirstName)
