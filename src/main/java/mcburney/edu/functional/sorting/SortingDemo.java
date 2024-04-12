@@ -1,5 +1,7 @@
 package mcburney.edu.functional.sorting;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -9,7 +11,7 @@ import java.util.List;
 
 public class SortingDemo {
     public static void main(String[] args) {
-        List<String> soliloquy = List.of(
+        List<String> soliloquy = new ArrayList<>(List.of(
                 "To be or not to be?, That is the question", 
                 "Whether tis nobler in the mind to suffer", 
                 "The slings and arrows of outrageous fortune", 
@@ -19,7 +21,9 @@ public class SortingDemo {
                 "the heartache, and the thousand natural shocks", 
                 "That flesh is heir to. 'Tis a consummation", 
                 "Devoutly to be wished. To die, to sleep", 
-                "To sleep perchance to dream: ay, there's the rub.");
+                "To sleep perchance to dream: ay, there's the rub."));
+
+        Collections.sort(soliloquy);
 
         soliloquy.forEach(System.out::println);
     }
